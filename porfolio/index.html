@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Ved Pandere</title>
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" aria-label="Navigation">
+        <div class="container navbar">
+          <h1>Ved Pandere</h1>
+
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h2 id="typed-text"></h2>
+          </div>
+          <div class="heading"><h1>I am a Full-Stack Developer</h1></div>
+          <div
+            class="hero-socials"
+            aria-label="Social Media Links"
+          >
+            <a href="#" aria-label="Twitter Link"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="#" aria-label="Github Link"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a href="#" aria-label="LinkedIn Link"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="#" aria-label="Facebook Link"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h1>
+            I'm <strong>Ved Pandere</strong> and I'm a
+            <strong>full stack developer</strong>
+          </h1>
+
+          <div class="about-info">
+            <p>
+              Greetings! I'm Ved, a passionate full stack developer dedicated to crafting exceptional digital experiences. With a strong foundation in both front-end and back-end technologies, I bring creativity and functionality together to build innovative web solutions. My expertise includes proficiency in languages such as HTML, CSS, JavaScript, and proficiency in frameworks like React and Node.js. I thrive on turning ideas into reality, ensuring a seamless blend of aesthetics and functionality. Explore my portfolio to witness the fusion of design and technology in my projects.
+            </p>
+          </div>
+
+          <button
+            onclick="downloadPDF()"
+            class="about-button"
+            aria-label="Download Resume Button"
+          >
+            Download Resume
+            <ion-icon
+              name="download-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+          <script>
+            function downloadPDF() {
+              var pdfPath = './styles/Resume.pdf';
+              var link = document.createElement('a');
+              link.href = pdfPath;
+              link.download = 'downloaded_file.pdf';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }
+          </script>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <h1>Just a few of my <strong>skills</strong></h1>
+        <div class="container skill-grid">
+          <div class="skill">
+            <ion-icon
+              name="logo-react"
+              class="skill-icon"
+              aria-hidden="true"
+            ></ion-icon>
+            <h3>React</h3>
+            <p>
+              As a seasoned React developer, I specialize in building modular and efficient components, ensuring a smooth and dynamic user interface. My proficiency extends to state management, component lifecycle, and integrating third-party libraries, resulting in scalable and maintainable applications.
+            </p>
+          </div>
+          <div class="skill">
+            <ion-icon
+              name="logo-html5"
+              class="skill-icon"
+              aria-hidden="true"
+            ></ion-icon>
+            <h3>HTML5</h3>
+            <p>
+              With a keen eye for semantic markup, I excel in harnessing the power of HTML5 to create well-structured and accessible web content. My skills ensure cross-browser compatibility and adherence to the latest standards, providing a solid foundation for exceptional user experiences.
+            </p>
+          </div>
+          <div class="skill">
+            <ion-icon
+              name="logo-CSS3"
+              class="skill-icon"
+              aria-hidden="true"
+            ></ion-icon>
+            <h3>CSS3</h3>
+            <p>
+              Bringing creativity to life, my expertise in CSS3 allows me to craft visually appealing and responsive designs. I am well-versed in flexbox, grid layouts, and CSS preprocessors, ensuring pixel-perfect styling that seamlessly adapts to various devices and screen sizes.
+            </p>
+          </div>
+          <div class="skill">
+            <ion-icon
+              name="logo-javascript"
+              class="skill-icon"
+              aria-hidden="true"
+            ></ion-icon>
+            <h3>Javascript</h3>
+            <p>
+              As a JavaScript virtuoso, I excel in developing interactive and feature-rich applications. My skills include asynchronous programming, ES6/ES7 features, and leveraging frameworks/libraries to enhance functionality. I am dedicated to optimizing performance and creating seamless user interactions through innovative JavaScript solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="resume" id="resume">
+        <div class="container">
+          <h1>
+            My Previous <strong>Work</strong> History &
+            <strong>Education</strong>
+          </h1>
+
+          <div class="resume-content">
+            <div>
+              <h2>Education</h2>
+
+              <article>
+                <div class="card-header">
+                  <div class="card-header-info">
+                    <p>Fergusson College</p>
+                    <p>Deccan Education Society, Pune</p>
+                  </div>
+                  <span>2019-2021</span>
+                </div>
+                <p class="card-info">
+                  I successfully completed my 11th and 12th grades at Fergusson College, where I not only acquired a strong academic foundation but also honed essential skills in critical thinking and problem-solving. The dynamic learning environment at Fergusson College has equipped me with a comprehensive understanding of various subjects, fostering both personal and intellectual growth. This educational journey has instilled in me a commitment to excellence and a passion for continuous learning.
+                </p>
+              </article>
+              <article>
+                <div class="card-header">
+                  <div class="card-header-info">
+                    <p>Dr. D Y Patil Institute Of Technology</p>
+                    <p>SPPU University, Pune</p>
+                  </div>
+                  <span>2021-2025</span>
+                </div>
+                <p class="card-info">
+                  I am currently pursuing a Computer Engineering degree at Dr. D Y Patil Institute Of Technology. Engaging in a rigorous curriculum, I am expanding my knowledge in core computer science concepts and acquiring hands-on experience in cutting-edge technologies. This academic journey not only fuels my passion for innovation but also nurtures my problem-solving skills and prepares me for a dynamic career in the ever-evolving field of computer engineering.
+                </p>
+              </article>
+            </div>
+            <div>
+              <h2>Experience</h2>
+              <article>
+                <div class="card-header">
+                  <div class="card-header-info">
+                    <p>CodSoft Internship</p>
+                    <p>Pune</p>
+                  </div>
+                  <span>15/12/2023 - 15/1/2024</span>
+                </div>
+                <p class="card-info">
+                  I successfully completed a rewarding internship at Codsoft, where I delved into the realm of Full Stack Web Development. During this immersive experience, I honed my skills in both front-end and back-end technologies, working on real-world projects and contributing to the development of robust web solutions. This internship not only provided hands-on experience but also deepened my understanding of the intricacies involved in creating dynamic and efficient web applications.
+                </p>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h1>Some of my <strong>Projects</strong></h1>
+          <div class="project-grid">
+            <div class="project-card" data-category="react">
+              <h2>Dream Casters</h2>
+              <img
+                src="./styles/landing.png"
+                alt="Front-end"
+              />
+            </div>
+            <div
+              class="project-card"
+              data-category="html"
+            >
+              <h2>Portfolio</h2>
+              <img
+                src="./styles/porfolio.jpg"
+                alt="front-end"
+              />
+            </div>
+            <div
+              class="project-card"
+              data-category="css"
+            >
+              <h2>Job Hunt</h2>
+              <img
+                src="./styles/job.jpeg"
+                alt="Front-end and Back-end Project "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h1>You can <strong>Contact Me</strong></h1>
+          <p class="contanct-details">
+            Email : vedpandere@gmail.com <br>
+            Contact no. : 9307280761
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-container">
+        <p>&copy; 2024 VedPandere.com All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
